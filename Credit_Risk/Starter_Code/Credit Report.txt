@@ -1,0 +1,39 @@
+Credit Risk Analysis Report
+
+Analysis Overview: The purpose of this analysis was to create, train and evaluate a model based on credit-risk. The model outcome
+was between 0 and 1. Being 0 considered a healthy loan and 1 a high-risk loan. The data considered took into account data
+such as loan size, interest rate, borrower income, debt to income, number of accounts, derrogatory accounts and total debt to finally
+determine loan status. To train the models first I put the data into a dataframe and split the dataset into training and testing.
+datasets.Then a logistic regression was made with sklearn and the training data was fit to the model. As the data was unbalanced, a second model
+was created using randomOverSampler, this resampled data was then fit to the model and made predictions. In the end, second trained
+model gave the most accurate results, with 99% Accuracy
+
+Using a bulleted list, describe the accuracy, precision, and recall scores of the machine learning model.
+
+Trained Model 1:
+
+Accuracy: 95%
+
+Precision: Healthy Loans: 1.00
+           High-Risk Loans: 0.85
+
+Recall: Healthy Loans: 1.00
+        High-Risk Loans: 0.89
+
+
+Trained Model 2:
+
+Accuracy: 99%
+
+Precision: Healthy Loans: 1.00
+           High-Risk Loans: 0.84
+
+Recall: Healthy Loans: 0.99
+        High-Risk Loans: 0.99
+
+In summary:
+
+Both Models are accurate in predicting healthy loans. However, Model 2 using resampled data has near perfect accuracy score. 
+I would recommend for the user to go for trained model 2.
+
+
